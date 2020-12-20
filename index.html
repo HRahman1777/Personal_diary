@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 850px)">
+    <title>Personal Diary</title>
+</head>
+<body>
+    <h1>Personal Diary</h1>
+    <hr style="padding: 20px;">
+    <section class="input">
+        <span>Date</span>
+        <input type="text" class="date" placeholder="Enter Date">
+        <br>
+        <span>Heading</span>
+        <input type="text" class="s_line" placeholder="Enter Heading">
+        <br>
+        <div class="col-25">
+            <label for="subject">Description</label>
+          </div>
+        <div class="col-75">
+            <textarea id="subject" name="subject" placeholder="Write Something..." style="height:200px"></textarea>
+        </div>
+        <div class="btn">
+            <button class="Submt">Add to diary</button>
+        </div>
+    </section>
+    <br>
+    <table id="Output">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Heading</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody class="Diary">
+           
+        </tbody>
+        
+    </table>
+    <script src="index.js"></script>
+</body>
+</html>
